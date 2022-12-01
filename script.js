@@ -75,11 +75,8 @@ const arr7 = ["###", "#*#", "###"];
 
 function asterisk(arr7) {
     for (let i = 0; i < arr7.length; i++) {
-        if (arr7[i] === "*##" ) return true;
-            
-        else if (arr7[i] === "#*#" ) return true;
-            
-        else if (arr7[i] === "##*") return true;
+        
+        if (arr7[i].includes("*") ) return true;
             
     }   
     return false;
